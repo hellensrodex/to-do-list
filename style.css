@@ -4,4 +4,52 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+.container{
+    background-color: #BF9673;
+    width: 100%;
+    padding:10px;
+    min-height: 100vh;
+}
+
+.todo{
+    background-color: #F2F2F2;
+    width: 100%;
+    max-width: 550px;
+    margin: 100px auto 20px ;
+    padding: 35px 20px 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.todo h1{
+    color: #F24150;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.task{
+    font-weight: 300;
+    border-style: hidden;
+    background-color: rgb(226, 226, 226);
+    font-size: 15px;
+    padding: 6px 120px 6px 20px;
+    width: 100p;
+    border-radius: 20px;
+}
+
+button{
+    background-color: #F24150;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    color: #F2F2F2;
+    cursor: pointer;
+    font-weight: 600;
 }
