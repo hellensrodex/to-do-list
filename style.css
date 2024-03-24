@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: 'Montserrat';
 }
 
 .container{
@@ -22,7 +22,6 @@
     padding: 35px 20px 80px ;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     border-radius: 15px;
 }
@@ -32,16 +31,29 @@
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.task{
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-weight: 300;
-    border-style: hidden;
+    border: none;
     background-color: rgb(226, 226, 226);
-    font-size: 15px;
-    padding: 6px 120px 6px 20px;
-    width: 100p;
-    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    outline: none;
+}
+
+input{
+    font-size: 14px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
 button{
@@ -52,4 +64,22 @@ button{
     color: #F2F2F2;
     cursor: pointer;
     font-weight: 600;
+}
+
+ul li{
+    list-style: none;
+    font-size: 15px;
+    color: #402421;
+    font-weight: 400;
+    padding: 10px 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 30px;
 }
