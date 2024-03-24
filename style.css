@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --cor-bege: #D9D1C7;
+    --cor-rosa: #BF5687;
+    --cor-branco: #fafafa;
+    --cor-cinzaclaro: rgb(241, 241, 241);
+    --cor-preta: #2e2e2e;
+    --cor-cinza: #b3b3b3;
+}
+
 *{
     margin: 0;
     padding:0;
@@ -8,14 +17,15 @@
 }
 
 .container{
-    background-color: #BF9673;
+    background-color: var(--cor-bege);
     width: 100%;
     padding:10px;
     min-height: 100vh;
 }
 
+
 .todo{
-    background-color: #F2F2F2;
+    background-color: var(--cor-branco);
     width: 100%;
     max-width: 550px;
     margin: 100px auto 20px ;
@@ -23,16 +33,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 15px;
 }
 
 .todo h1{
-    color: #F24150;
+    color: var(--cor-rosa);
     font-weight: 700;
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
     display: flex;
-    justify-content: center;
+
 }
 
 .input{
@@ -41,12 +50,14 @@
     justify-content: space-between;
     font-weight: 300;
     border: none;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--cor-cinzaclaro);
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     border-radius: 50px;
     outline: none;
 }
+
+
 
 input{
     font-size: 14px;
@@ -56,30 +67,37 @@ input{
     background: transparent;
 }
 
-button{
-    background-color: #F24150;
+#btn{
+    background-color: var(--cor-bege);
     border: none;
-    padding: 8px;
+    padding: 7px 25px;
     border-radius: 20px;
-    color: #F2F2F2;
+    color: var(--cor-preta);
     cursor: pointer;
     font-weight: 600;
 }
 
-ul li{
+#btn:hover{
+ background-color: #BF5687;
+}
+
+ol li{
     list-style: none;
     font-size: 15px;
-    color: #402421;
-    font-weight: 400;
+    color: var(--cor-preta);
+    font-weight: 500;
     padding: 10px 3px;
     cursor: pointer;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    text-transform: capitalize;
 }
 
-ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 30px;
+#btnok{
+    background-color: var(--cor-rosa);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 23px;
+    cursor: pointer;
 }
+
