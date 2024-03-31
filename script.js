@@ -1,5 +1,7 @@
 const localStorageName = 'to-do-list'
 
+var itens = []
+
 function newTask()
 {
     let input = document.getElementById ('task');
@@ -36,5 +38,3 @@ function removeItem(data)
 }
 
 mostrarValues()
-
-
