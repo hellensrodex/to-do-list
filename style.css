@@ -38,7 +38,7 @@
 .todo h1{
     color: var(--cor-rosa);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 25px;
     display: flex;
 
@@ -80,6 +80,7 @@ input{
 
 #btn:hover{
  background-color: #BF5687;
+ color: var(--cor-branco);
 }
 
 ol li{
